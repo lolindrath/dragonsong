@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonsong", "Dragonsong.csproj", "{BE028421-1E0E-4582-B25B-1FFA271138D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnsiEdit", "AnsiEdit\AnsiEdit.csproj", "{7853201C-6196-4F0B-821C-465785A2F5A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,170 @@
+Dragonsong - General Purpose MUD Client
+
+Version 0.4.2 - 08/31/2006
+	* Fixed a bug in the MudList where it tried to close a null XmlTextReader
+
+Version 0.4.2 - 08/12/2006
+	* Used a different scroll to bottom function, we'll see how that works out
+
+Version 0.4.2 - 03/18/2006
+	* Fixed the mudlist io problem
+
+Version 0.4.1 - 11/20/2005
+	* Fixed a form resizing problem when using an XP Theme vs. Windows Classic Theme
+	* Upgraded to Visual Studio 2005
+
+Version 0.4 - 04/01/05
+	* Fixed QuickConnect was not saving its data past form.close()
+	* QuickConnect now checks that the port is a valid range
+	* QuickConnect now catches any errors from int.Parse() to check for a bad int
+	* Put these changes in ConnectionManager() also
+	* Changed HistorySize to use the above method of error checking
+	* Clicking the website on the SplashScreen now brings up lolindrath.com
+	* Added a bad hack to prevent two connections trying to use the same log file at the same time
+	* made a link label out of the lolindrath.com link in FrmAbout
+
+Version 0.4 - 12/17/04 
+	* Added a default Mud to the MudList if there are none (RoE)
+	* The default entry for quick connect is now planetmud.net:5005
+	* Added a button to the disconnect dialog so there's now Quick Connect
+		and Connection Manager
+	* The quick connect window now saves its values
+
+Version 0.4 - 12/09/04
+	* Handled IOException in the Connection class incase the server forcible closes
+		the connection during a recv
+	* Added CurrentFont to AnsiEdit. Before it used AnsiEdit.Font which attempted to
+		change the font of the whole window which wasn't working. Now it changes the
+		font of all newly appended text.
+
+Version 0.4 - 11/18/04
+	* Window resizes when the cmbInput.Font changes to show big fonts
+	* You can now change the input area font
+	* More validation in forms
+	* Various changes to make UI design better
+	* All files now save in XML format
+	* All preference files now save in ApplicationSettings\LolindrathDevGroup\Dragonsong\
+		instead of saving at the version level
+	* Added very basic logging
+	* Added a log viewer
+
+Version 0.4 - 10/21/04
+	* Optimized buffer chopping - it now waits until its a third of the size
+		of MaxScrollSize until it chops (so it isn't trying to chop 9 characters off)
+	* Fixed buffer chopping - it actually works now and it also chops
+	  to the nearest line (in reverse) so you don't get ugly half chopped text
+
+Version 0.4 - 10/19/04
+	* Added double-click handler for the connection manager mud list
+	* Added delete buttons for Aliases and Macro Editor
+	* Made MaxScroll and ScrollPos properties for AnsiEdit
+
+Version 0.4 - 10/14/04
+	* Aliases are in with argument replacement
+	* Title now changes when you switch windows
+	* Added saving of the current session
+	* bunch more changes to make FxCop shut up
+	* Code cleanup
+	* Added XML documentation
+	
+Version 0.4 - 10/13/04
+	* Bought House
+	* Bugfixes for connection manager
+	* Bugfixes for bell sound
+	* bugfix - now sends login script on reconnect
+	* Macros are working
+	* Started on aliases
+
+Version 0.4 - 10/11/04
+	* Added the connection manager - just have to implement the rename button and some
+		type of dirty flag to make sure people save and I'm done
+	* Added an exit button to FrmDisconnect()
+	
+Version 0.4 - 10/08/04
+	* Added autocomplete - hit escape and it will fill in with the closest matching
+		entry in the command history.
+	* Made the AnsiEdit readonly for all connections
+	* Added disconnect dialog
+
+Version 0.4 - 10/07/04
+	* Added try/catches to send and recieve to handle any socket or io errors
+	* Changed autoscroll so it only scrolls if you're at the very bottom of the page
+	* Mapped the numberpad to the cardinal directions and 5 to the look command to make
+		navigation easy
+	* Fixed autoscroll - it was very broken the original way
+	* Removed the txtInput - I'm no longer going to try to mask the input that way
+
+Version 0.4 - 10/05/04
+	* Fixed a problem with ANSI processing, it was in State.Esc too much and screwed
+		up processing of [ on its online (thought it was a Bracket right after an Esc)
+	* Handled connecting to a bad host/port
+	* Fixed the Config so now when you change the font it actually changes (still need
+		to really fix font changing)
+	* Added a splash screen
+
+Version 0.4 - 10/04/04
+	* Fixed the Exit menu item, I never updated it after I changed to a hash
+	* Made it select the tab you just added upon connection
+	* Made a bunch of changes that FxCop suggested
+	
+Version 0.4 - 9/27/2004
+	* Added the History Size Preference
+	* Added the MagicLibrary TabControl, looks much sharper now
+	* Now using WindowSerializer from the Genghis group to save the window position
+	* Removed FrmRTF and FrmLog since I no longer need them for debugging
+	* Added a ChangeLog tab to the About Box and embedded the ChangeLog
+	* Added the NewDataEvent to the Connection class to get ready for Logging
+	
+Version 0.4 - 9/24/2004
+	* Added the ability to connect to multiple MUDs (having threading issues though)
+	* Fixed config saving
+	* Added icons to tab pages to show incoming data on an individual window level
+	* Changed Message History around - was inserting into wrong end
+	
+Version 0.4 - 9/23/2004
+	* Made it so approximately 500 lines are in the buffer and the rest scroll
+	  off into oblivion. Having too much in the AnsiEdit was causing the control
+	  to AppendText() way too slow
+	* Turned double buffering on to hopefully help drawing speed and flicker
+	* Turned the debug windows off, there's barely a need for them now
+	* Fixed password masking - was still showing up in the MUD window
+	* Added FrmPreference
+	* Added Config class
+	* Added ability to set the Window Font and the command seperator
+	* Aggregated out the Connection class to get ready for multiple MUDs in one window
+	
+Version 0.3 - 9/13/2004
+	* Finished implementing Password masking
+	* Moved all ANSI stuff into it's own Windows control called AnsiEdit
+	* Added code to make updating AnsiEdit control much much faster
+	
+Version 0.2 - 9/12/2004
+Lolindrath
+	* Implemented Bell
+	* Half finished Password masking
+
+Version 0.1 - 9/11/2004
+Lolindrath
+	* Added socket to Main.cs so that GetSocket() wouldn't be called so often
+	* Added About window
+	* Switched from KeyUp to KeyPress for cmbInput so I could squelch the beep
+	* I think I fixed a weird bug where extra text would be kept at the bottom
+	  I'm pretty sure this was caused by not doing an SelectionStart = 0 before
+	  SelectionRTF += "whatever"
+	  
+Version 0.0 - 9/10/2004 
+Lolindrath
+	* Fixed Bug #1
+	* Added Escaping for { and }
+	* In input text box switched to TrimEnd instead of SubString
+	* Added Disconnect() method to Main.cs
+	* Fixed a bug in InsertTextAsRtf() where not everything was being bolded
+	* Fixed telnet support - was copying the string before processing telnet
+	* Big code cleanup - renamed controls to something relevant, added comments
+	* Pulled Win32 interop stuff into Win32Helper
+	* Added GPL License
+	* Moved RTF and Log to FrmRTF and FrmLog
+	* Replaced txtInput with cmbInput, much better behaviour now plus command history
+	* Added hyperlink handling
+	* Added dynamic icon creation for App icon and Data icon
+	* Added Icon change when new data was sent to connection

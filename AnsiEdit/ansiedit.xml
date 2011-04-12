@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnsiEdit</name>
+    </assembly>
+    <members>
+        <member name="T:Dragonsong.AnsiEdit">
+            <summary>
+            AnsiEdit inherits from RichTextBox
+            and handles standard ANSI color sequences,
+            translating them into Rich Text Format.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.AnsiEdit"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.BeginUpdate">
+            <summary>
+            Maintains performance while updating.
+            </summary>
+            <remarks>
+            <para>
+            It is recommended to call this method before doing
+            any major updates that you do not wish the user to
+            see. Remember to call EndUpdate when you are finished
+            with the update. Nested calls are supported.
+            </para>
+            <para>
+            Calling this method will prevent redrawing. It will
+            also setup the event mask of the underlying richedit
+            control so that no events are sent.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.EndUpdate">
+            <summary>
+            Resumes drawing and event handling.
+            </summary>
+            <remarks>
+            This method should be called every time a call is made
+            made to BeginUpdate. It resets the event mask to it's
+            original value and enables redrawing of the control.
+            </remarks>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.AppendText(System.String,Dragonsong.AnsiEdit.MessageType)">
+            <summary>
+            Appends the text.
+            </summary>
+            <param name="s">S.</param>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.InsertTextAsRtf(System.String,System.Drawing.Font,Dragonsong.AnsiEdit.RtfColor,Dragonsong.AnsiEdit.RtfColor)">
+            <summary>
+            Inserts the text as RTF.
+            </summary>
+            <param name="s">S.</param>
+            <param name="font">Font.</param>
+            <param name="textColor">Color of the text.</param>
+            <param name="backColor">Color of the back.</param>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.ScrollToBottom">
+            <summary>
+            Scrolls to the bottom.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.AnsiEdit.InitializeComponent">
+            <summary>
+            Initializes the component.
+            </summary>
+        </member>
+        <member name="P:Dragonsong.AnsiEdit.Echo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Dragonsong.AnsiEdit"/> is echo.
+            </summary>
+            <value>
+            	<c>true</c> if echo; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Dragonsong.AnsiEdit.CurrentFont">
+            <summary>
+            gets or sets the current font
+            </summary>
+        </member>
+        <member name="P:Dragonsong.AnsiEdit.MaxScroll">
+            <summary>
+            Gets or sets the max scroll.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.AnsiEdit.ScrollPos">
+            <summary>
+            Gets the scroll position.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.AnsiEdit.MessageType">
+            <summary>
+            Describes how to interpret
+            the data being added.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.MessageType.KeyboardInput">
+            <summary>
+            This is input the user types and sends to the server
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.MessageType.Normal">
+            <summary>
+            Just normal text added to the control
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.MessageType.Error">
+            <summary>
+            Outputs the text as an error in red on a white background
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.MessageType.ANSI">
+            <summary>
+            Interprets this text as ANSI.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.AnsiEdit.RtfColor">
+            <summary>
+            Describes the allowed color set
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Black">
+            <summary>
+            ANSI Black
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Red">
+            <summary>
+            ANSI Red
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Green">
+            <summary>
+            ANSI Green
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Yellow">
+            <summary>
+            ANSI Yellow
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Blue">
+            <summary>
+            ANSI Blue
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Magenta">
+            <summary>
+            ANSI Magenta
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.Cyan">
+            <summary>
+            ANSI Cyan
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.White">
+            <summary>
+            ANSI White
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightBlack">
+            <summary>
+            Bright Black
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightRed">
+            <summary>
+            Bright Red
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightGreen">
+            <summary>
+            Bright Green
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightYellow">
+            <summary>
+            Bright Yellow
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightBlue">
+            <summary>
+            Bright Blue
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightMagenta">
+            <summary>
+            Bright Magenta
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightCyan">
+            <summary>
+            Bright Cyan
+            </summary>
+        </member>
+        <member name="F:Dragonsong.AnsiEdit.RtfColor.BrightWhite">
+            <summary>
+            Bright White
+            </summary>
+        </member>
+        <member name="T:Dragonsong.Win32Helper">
+            <summary>
+            Summary description for Win32Helper.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Win32Helper.SendMessage(System.Int32,System.UInt32,System.Int32,System.Int32)">
+            <summary>
+            Sends the message.
+            </summary>
+            <param name="hWnd">H WND.</param>
+            <param name="Msg">MSG.</param>
+            <param name="wParam">W param.</param>
+            <param name="lParam">L param.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dragonsong.Win32Helper.GetScrollInfo(System.Int32,System.Int32,Dragonsong.Win32Helper.SCROLLINFO@)">
+            <summary>
+            Gets the scroll info.
+            </summary>
+            <param name="hwnd">HWND.</param>
+            <param name="n">N.</param>
+            <param name="lpScrollInfo">Lp scroll info.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dragonsong.Win32Helper.PlaySoundEvent(System.String)">
+            <summary>
+            Plays an OS event sound
+            </summary>
+            <param name="file">The sound file to play</param>
+        </member>
+        <member name="M:Dragonsong.Win32Helper.PlaySound(System.String)">
+            <summary>
+            Plays the sound file
+            </summary>
+            <param name="file">PSZ sound.</param>
+        </member>
+        <member name="T:Dragonsong.Win32Helper.SCROLLINFO">
+            <summary>
+            Describes the current state of the scroll bar
+            </summary>
+        </member>
+    </members>
+</doc>

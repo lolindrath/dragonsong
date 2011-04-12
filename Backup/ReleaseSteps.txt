@@ -1,0 +1,21 @@
+Dragonsong
+	* Double-check tab order for all forms
+	* Double-check all menus/buttons have access key (i.e. that underlined letter)
+	* Double-check all files have GPL
+	* Double-check that all XML comments that can be added were added
+	* Check for latest release of Genghis controls
+
+Packaging
+	* Create source release by using svn export and zipping it up
+	* Create binary release by compiling export in release mode
+
+Websites
+	* Add and Upload releases to sf.net
+	* Update version and link on Dragonsong Page
+	* Update Screenshots
+	* Update help files (when I get some)
+	* Update ChangeLog on Website
+	* Add news item to lolindrath website
+	* Add news item to sf.net project page
+	* Add news item to planetmud.net
+	* Add post at mudconnect and mudmagic.com

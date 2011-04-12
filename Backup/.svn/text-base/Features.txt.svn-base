@@ -1,0 +1,85 @@
+Features of [0.4]:
+* ANSI Color support
+* Quick Connect
+* command history
+* Status icons - change icon in system tray to reflect incoming data
+* Bell
+* No support for blinking text(nor will there ever be)
+* Splash screen
+* Movement using the numberpad
+* Multi-connection
+* Preferences
+	- Configurable multi-command separator (ie. ;)
+	- Font
+	- Bell wave
+	- history size
+* Logging
+* Log Reader
+* Change window title based on which MUD is showing
+* Magic UI TabControl + Link in About Box
+* Window Position Saving
+* Save Current Session
+* Connection Manager
+* hitting escape completes with the closest entry in the command history
+* Splash screen
+* Aliases
+* Disconnect Dialog
+* Keyboard macros
+
+Planned Features:
+	
+
+[0.5]: Automation
+	* Send IAC_DONT_ECHO at beginning of transaction
+	* Preferences
+		- Log Path
+		- Colors
+	* Triggers - Regular Expression
+           - Advanced multi-line
+           - redirect to another window - e.x. tells go to the tell tab
+	* Speed Walking
+	* Named paths - #path temple .2e4s2w then to execute - .temple
+	* MCCP - compression protocol
+	* MUD listing http://mudconnect.com/zmud/mudlist.txt 
+				  http://mudmagic.com/listings/mudlist.txt
+				  to pick a mud to add the the connection manager
+	* Zipped logs
+	* Better AboutBox
+	* Better menus/toolbars/docking windows
+	* Password Masking
+
+Possible Features:
+* Autoexpanding Command Input box
+* Boss Panic (hide window)
+* Chat line and tell monitors (filters those into seperate floating windows)
+* Triggers can be put into named groups and different groups activated at different times
+* Pretty Menu's and Toolbars
+* SharpDevelop's DockManager
+* Code Style guidelines
+* Genghis Preference writer?
+* Genghis HtmlLinkLabel?
+* Check Version against www.lolindrath.com/dragonsong-version.xml
+* Printing Support - RichTextBoxEx example
+* PDF export
+* Desktop links to MUDs (do a commandline option for this that just opens a new tab)
+* Configure Bell Wave file
+* Timers - tick timer and total play time timer - alarms at certain intervals
+* auto-login
+* auto-reconnect
+* Mapper - with Automapping
+* Themes (supported by default?)
+* Scripting with Dragonsong COM - Debugger - Syntax highlighting
+* User-definable buttons
+* Customizable status line - set by triggers and variables
+* Character database - including notes
+* Windows dock inside main one and can be pulled off
+* Plugin support - HP monitor
+* Full Screen mud window
+* Windowshade up/down
+* stay on top
+* MSP - Mud Sound Protocol
+* MXP - HTML and XML-like tags - 32bit color - bold, italic, etc -	hyperlinks
+  embedded command links - right-click menus - MUD relocation and login tags
+* MCP - text file send/recieve - mostly for building
+* email addresses - auto-link them
+* Customizable database

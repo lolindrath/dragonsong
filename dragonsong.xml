@@ -1,0 +1,801 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dragonsong</name>
+    </assembly>
+    <members>
+        <member name="T:Dragonsong.QuickConnect">
+            <summary>
+            Summary description for QuickConnect.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.QuickConnect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.QuickConnect.#ctor(Dragonsong.Config)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.QuickConnect"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.QuickConnect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.QuickConnect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.FrmDisconnected">
+            <summary>
+            Summary description for FrmDisconnected.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmDisconnected.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmDisconnected.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmDisconnected"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmDisconnected.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmDisconnected.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Dragonsong.FrmDisconnected.Connection">
+            <summary>
+            Gets or sets the connection.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.Mud">
+            <summary>
+            This represents an instance
+            of a MUD
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Mud.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.Mud"/> instance.
+            </summary>
+            <param name="n">N.</param>
+        </member>
+        <member name="P:Dragonsong.Mud.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Mud.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Mud.Port">
+            <summary>
+            Gets or sets the port.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Mud.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Mud.LoginScript">
+            <summary>
+            Gets or sets the login script.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.FrmSplash">
+            <summary>
+            Summary description for FrmSplash.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmSplash.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmSplash.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmSplash"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmSplash.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmSplash.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.FrmMudName">
+            <summary>
+            Summary description for FrmMudName.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmMudName.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMudName.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmMudName"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMudName.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMudName.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMudName.ShowForm">
+            <summary>
+            Shows the form.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Dragonsong.FrmMacroEditor">
+            <summary>
+            Summary description for FrmMacroEditor.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmMacroEditor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMacroEditor.#ctor(Dragonsong.KeyMappings)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmMacroEditor"/> instance.
+            </summary>
+            <param name="k">K.</param>
+        </member>
+        <member name="M:Dragonsong.FrmMacroEditor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMacroEditor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.MudList">
+            <summary>
+            This wraps an ArrayList with Save()/Load()
+            functionality to manage the users' MUDs
+            </summary>
+        </member>
+        <member name="M:Dragonsong.MudList.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.MudList"/> instance.
+            </summary>
+            <param name="f">F.</param>
+        </member>
+        <member name="M:Dragonsong.MudList.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.MudList.Load">
+            <summary>
+            Loads this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.MudList.FindMud(System.String)">
+            <summary>
+            Finds a mud by name
+            </summary>
+            <param name="name">Name.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Dragonsong.MudList.List">
+            <summary>
+            Gets the list of the muds the user has saved
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.FrmMain">
+            <summary>
+            Summary description for Form1.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmMain.pendingHost">
+            <summary>
+            used to pass in a host and port that will be connected to at startup
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmMain.pendingPort">
+            <summary>
+            used to pass in a host and port that will be connected to at startup
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMain.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmMain"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Connect(System.String,System.Int32)">
+            <summary>
+            Connects to the specified host.
+            </summary>
+            <param name="host">Host.</param>
+            <param name="port">Port.</param>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Connect(Dragonsong.Mud)">
+            <summary>
+            Connects using the Muds data
+            </summary>
+            <param name="m">M.</param>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Disconnect">
+            <summary>
+            Disconnects the active tab's connection.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Disconnect(Crownwood.Magic.Controls.TabPage)">
+            <summary>
+            Disconnects by using a tab.
+            </summary>
+            <param name="t">T.</param>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Disconnect(Dragonsong.Connection)">
+            <summary>
+            Disconnects the specified connection.
+            </summary>
+            <param name="connection">Connection.</param>
+        </member>
+        <member name="M:Dragonsong.FrmMain.Reconnect(Dragonsong.Connection)">
+            <summary>
+            Reconnects the specified connection.
+            </summary>
+            <param name="c">C.</param>
+        </member>
+        <member name="M:Dragonsong.FrmMain.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processs the dialog key.
+            </summary>
+            <param name="keyData">Key data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Dragonsong.FrmMain.mnuSaveCurrentSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            Saves the current session to a file.
+            </summary>
+            <param name="sender">Sender.</param>
+            <param name="e">E.</param>
+        </member>
+        <member name="P:Dragonsong.FrmMain.Echo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Dragonsong.FrmMain"/> is echo.
+            </summary>
+            <value>
+            	<c>true</c> if echo; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Dragonsong.FrmMain.Config">
+            <summary>
+            Gets or sets the config.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.FrmMain.MudList">
+            <summary>
+            Gets or set the MudList
+            </summary>
+        </member>
+        <member name="T:Dragonsong.FrmAliases">
+            <summary>
+            Summary description for FrmAliases.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmAliases.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmAliases.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmAliases.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.TelnetHelper">
+            <summary>
+            TelnetHelper does telnet negotation and sub negotiation
+            </summary>
+        </member>
+        <member name="M:Dragonsong.TelnetHelper.#ctor(Dragonsong.FrmMain)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.TelnetHelper"/> instance.
+            </summary>
+            <param name="m">The parent form</param>
+        </member>
+        <member name="M:Dragonsong.TelnetHelper.ProcessTelnet(System.Byte[])">
+            <summary>
+            Processs the telnet.
+            </summary>
+            <param name="bytes">Bytes yo process</param>
+        </member>
+        <member name="T:Dragonsong.KeyMappings">
+            <summary>
+            This class wraps a hashtable with Save()/Load()
+            functionality for the keys a user has mapped to
+            certain macros. Only F1-F12 plus the modifiers
+            Alt, Shift and Ctrl are possible.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.KeyMappings.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.KeyMappings"/> instance.
+            </summary>
+            <param name="f">F.</param>
+        </member>
+        <member name="M:Dragonsong.KeyMappings.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.KeyMappings.Load">
+            <summary>
+            Loads this instance.
+            </summary>
+        </member>
+        <member name="P:Dragonsong.KeyMappings.Keys">
+            <summary>
+            Gets the keys and the macros they map to.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.Connection">
+            <summary>
+            This represents a single connection to a MUD.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Connection.#ctor(Crownwood.Magic.Controls.TabPage)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.Connection"/> instance.
+            </summary>
+            <param name="t">T.</param>
+        </member>
+        <member name="M:Dragonsong.Connection.Connect(System.String,System.Int32)">
+            <summary>
+            Connects the specified h.
+            </summary>
+            <param name="h">H.</param>
+            <param name="p">P.</param>
+        </member>
+        <member name="M:Dragonsong.Connection.Connect(Dragonsong.Mud)">
+            <summary>
+            Connects the specified m.
+            </summary>
+            <param name="m">M.</param>
+        </member>
+        <member name="M:Dragonsong.Connection.Connect">
+            <summary>
+            Connects this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Connection.Disconnect">
+            <summary>
+            Disconnects this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Connection.SendCommand(System.String)">
+            <summary>
+            Sends the command.
+            </summary>
+            <param name="command">Command.</param>
+        </member>
+        <member name="M:Dragonsong.Connection.OnNewData(Dragonsong.NewDataEventArgs)">
+            <summary>
+            Used to fire the new data event.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Dragonsong.Connection.OnDisconnected(System.EventArgs)">
+            <summary>
+            Used to fire the disconnected event.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="P:Dragonsong.Connection.Client">
+            <summary>
+            Gets the client.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Connection.Stream">
+            <summary>
+            Gets the stream.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Connection.Socket">
+            <summary>
+            Gets the socket.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Connection.Ansi">
+            <summary>
+            Gets the ANSIEdit.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Connection.SocketTimer">
+            <summary>
+            Gets the socket timer.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Connection.Echo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Dragonsong.Connection"/> is echo.
+            </summary>
+            <value>
+            	<c>true</c> if echo; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Dragonsong.Connection.Host">
+            <summary>
+            Gets or sets the host.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Connection.Port">
+            <summary>
+            Gets or sets the port.
+            </summary>
+            <value></value>
+        </member>
+        <member name="E:Dragonsong.Connection.NewData">
+            <summary>
+            This event fires when new data
+            has arrived at the Connection.
+            </summary>
+        </member>
+        <member name="E:Dragonsong.Connection.Disconnected">
+            <summary>
+            This event fires when the Connection
+            disconnects.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.NewDataEventHandler">
+            <summary>
+            This event fires when new data
+            has arrived at the Connection.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.NewDataEventArgs">
+            <summary>
+            This event fires when new data
+            has arrived at the Connection.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.NewDataEventArgs.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.NewDataEventArgs"/> instance.
+            </summary>
+            <param name="d">D.</param>
+        </member>
+        <member name="P:Dragonsong.NewDataEventArgs.Data">
+            <summary>
+            Gets the new incoming data.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.Config">
+            <summary>
+            Holds a users custom UI preferences.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Config.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.Config"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Config.Save">
+            <summary>
+            Saves this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Config.Load">
+            <summary>
+            Loads this instance.
+            </summary>
+            <returns>The loaded configuration</returns>
+        </member>
+        <member name="M:Dragonsong.Config.LoadDefaults">
+            <summary>
+            Loads the defaults.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Config.OnConfigChanged(System.EventArgs)">
+            <summary>
+            Fires the config changed event.
+            </summary>
+            <param name="e">E.</param>
+        </member>
+        <member name="P:Dragonsong.Config.ClientFont">
+            <summary>
+            Gets or sets the client font.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.InputFont">
+            <summary>
+            Gets or sets the input font.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.SerializeFont">
+            <summary>
+            Gets or sets the serialize font.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.SerializeInputFont">
+            <summary>
+            Gets or sets the serialize font.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.CommandSep">
+            <summary>
+            Gets or sets the command sep.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.HistorySize">
+            <summary>
+            Gets or sets the size of the history.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.ConfigExists">
+            <summary>
+            Gets or sets a value indicating whether [config exists].
+            </summary>
+            <value>
+            	<c>true</c> if [config exists]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Dragonsong.Config.BellSound">
+            <summary>
+            Gets or sets the bell sound.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Dragonsong.Config.QuickConnectHost">
+            <summary>
+            Gets or sets the Quick Connect Host
+            </summary>
+        </member>
+        <member name="P:Dragonsong.Config.QuickConnectPort">
+            <summary>
+            Gets or sets the Quick Connect Port
+            </summary>
+        </member>
+        <member name="E:Dragonsong.Config.ConfigChanged">
+            <summary>
+            Fires when the configuration changes.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.ConfigChangedEventHandler">
+            <summary>
+            Fires when the configuration changes.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Aliases.BuildAlias(System.String)">
+            <summary>
+            If the alias exists it does the replacement
+            otherwise it returns the input string
+            </summary>
+            <param name="input">Input from user.</param>
+            <returns>Alias if it exists or the original input</returns>
+        </member>
+        <member name="T:Dragonsong.FrmAbout">
+            <summary>
+            Summary description for FrmAbout.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmAbout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmAbout.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmAbout"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.Log">
+            <summary>
+            Summary description for Log.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Log.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.Log"/> instance.
+            </summary>
+            <param name="host">Host.</param>
+            <param name="port">Port.</param>
+        </member>
+        <member name="M:Dragonsong.Log.Write(System.String)">
+            <summary>
+            Writes the specified data.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Dragonsong.Log.WriteLine(System.String)">
+            <summary>
+            Writes the line.
+            </summary>
+            <param name="data">Data.</param>
+        </member>
+        <member name="M:Dragonsong.Log.Close">
+            <summary>
+            Closes this instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.Log.Dispose">
+            <summary>
+            Disposes this instance.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.FrmLogViewer">
+            <summary>
+            Summary description for FrmLogViewer.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmLogViewer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmLogViewer.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmLogViewer"/> instance.
+            </summary>
+            <param name="path">Path.</param>
+        </member>
+        <member name="M:Dragonsong.FrmLogViewer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmLogViewer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Dragonsong.FrmPreferences">
+            <summary>
+            Summary description for FrmPreferences.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmPreferences.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmPreferences.#ctor">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmPreferences"/> instance.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmPreferences.#ctor(Dragonsong.Config)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmPreferences"/> instance.
+            </summary>
+            <param name="c">C.</param>
+        </member>
+        <member name="M:Dragonsong.FrmPreferences.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmPreferences.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Dragonsong.FrmPreferences.Config">
+            <summary>
+            Gets or sets the config.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Dragonsong.FrmConnectionManager">
+            <summary>
+            Summary description for FrmConnectionManager.
+            </summary>
+        </member>
+        <member name="F:Dragonsong.FrmConnectionManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmConnectionManager.#ctor(Dragonsong.MudList)">
+            <summary>
+            Creates a new <see cref="T:Dragonsong.FrmConnectionManager"/> instance.
+            </summary>
+            <param name="m">M.</param>
+        </member>
+        <member name="M:Dragonsong.FrmConnectionManager.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Dragonsong.FrmConnectionManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

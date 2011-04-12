@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragonsong", "Dragonsong.csproj", "{BE028421-1E0E-4582-B25B-1FFA271138D7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnsiEdit", "AnsiEdit\AnsiEdit.csproj", "{7853201C-6196-4F0B-821C-465785A2F5A5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Debug.ActiveCfg = Debug|.NET
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Debug.Build.0 = Debug|.NET
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Release.ActiveCfg = Release|.NET
+		{BE028421-1E0E-4582-B25B-1FFA271138D7}.Release.Build.0 = Release|.NET
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Debug.ActiveCfg = Debug|.NET
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Debug.Build.0 = Debug|.NET
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Release.ActiveCfg = Release|.NET
+		{7853201C-6196-4F0B-821C-465785A2F5A5}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
